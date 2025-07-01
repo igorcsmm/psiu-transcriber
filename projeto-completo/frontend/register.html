@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Psiu By Neguin do Corte</title>
+    <link rel="stylesheet" href="css/register-modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background animado -->
+    <div class="animated-bg">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <!-- Container principal -->
+    <div class="register-container">
+        <div class="register-card">
+            <!-- Header -->
+            <div class="register-header">
+                <div class="logo">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h1>Psiu By Neguin do Corte</h1>
+                <p>Transcrição profissional com IA</p>
+            </div>
+
+            <!-- Formulário de cadastro -->
+            <form class="register-form" id="register-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user input-icon"></i>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Digite seu nome"
+                            required
+                        >
+                        <div class="input-status" id="name-status"></div>
+                    </div>
+                    <div class="field-error" id="name-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+                        <div class="input-status" id="email-status"></div>
+                    </div>
+                    <div class="field-error" id="email-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Digite sua senha"
+                            required
+                        >
+                        <button type="button" class="toggle-password" id="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <div class="input-status" id="password-status"></div>
+                    </div>
+                    <div class="password-strength" id="password-strength"></div>
+                    <div class="field-error" id="password-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input 
+                            type="password" 
+                            id="confirm-password" 
+                            name="confirm-password" 
+                            placeholder="Confirme sua senha"
+                            required
+                        >
+                        <button type="button" class="toggle-password" id="toggle-confirm-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <div class="input-status" id="confirm-password-status"></div>
+                    </div>
+                    <div class="field-error" id="confirm-password-error"></div>
+                </div>
+
+                <button type="submit" class="register-btn" id="register-btn">
+                    <span class="btn-text">Criar Conta</span>
+                    <div class="btn-loader" id="btn-loader">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                </button>
+            </form>
+
+            <!-- Footer -->
+            <div class="register-footer">
+                <p>ou</p>
+                <p>Já tem uma conta? <a href="login.html">Fazer login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notifications -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/register-modern.js"></script>
+</body>
+</html>
+

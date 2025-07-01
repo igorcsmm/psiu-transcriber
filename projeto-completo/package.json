@@ -1,0 +1,28 @@
+{
+  "name": "psiu-transcriber",
+  "version": "2.0.0",
+  "description": "Sistema de transcrição com Chat GPT integrado",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "./build.sh",
+    "dev": "cd backend && npm run dev",
+    "install-backend": "cd backend && npm install",
+    "heroku-postbuild": "cd backend && npm install"
+  },
+  "keywords": [
+    "transcription",
+    "assemblyai",
+    "openai",
+    "gpt",
+    "audio",
+    "video"
+  ],
+  "author": "Neguin do Corte",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
+
