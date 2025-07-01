@@ -1,10 +1,13 @@
 #!/bin/bash
 
-echo "🚀 Iniciando build para Render..."
+echo "🚀 Instalando FFmpeg e dependências..."
 
-# Instalar dependências do backend
+# Instalar FFmpeg via apt-get
+apt-get update
+apt-get install -y ffmpeg
+
+echo "📦 Instalando dependências do backend..."
 cd backend
 npm install
 
 echo "✅ Build concluído!"
-
